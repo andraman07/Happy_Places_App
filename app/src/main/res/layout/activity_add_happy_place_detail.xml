@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddHappyPlaceDetail">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/CustomToolbarStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/detail_image"
+        android:layout_height="@dimen/add_screen_place_image_size"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_tool_bar"
+        android:background="@drawable/add_screen_image_placeholder"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:src="@drawable/add_screen_image_placeholder"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Gwalior is the best city in india okk everyone"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintTop_toBottomOf="@id/detail_image"
+        />
+    <TextView
+        android:id="@+id/detail_location"
+        android:layout_marginTop="10dp"
+        tools:text="Gwalior"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/detail_description"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
